@@ -19,6 +19,10 @@
             "email": "jeremeamia@gmail.com",
             "homepage": "https://github.com/jeremeamia",
             "role": "Developer"
+        },
+        {
+            "name": "Gabriel Morgado",
+            "email": "gabriel.morgado@dbseller.com.br"
         }
     ],
     "require": {
