@@ -167,9 +167,7 @@ class SerializationTest extends \PHPUnit_Framework_TestCase
             $serialized = $serializer->serialize($closure);
             $unserialized = $serializer->unserialize($serialized);
             $results['ast'] = call_user_func_array($unserialized, $args);
-        } catch (\Exception $e) {
-            $results['ast'] = 'ERROR';
-        } catch (\Throwable $e) {
+        } catch (\Exception|\Throwable $e) {
             $results['ast'] = 'ERROR';
         }
 
@@ -179,9 +177,7 @@ class SerializationTest extends \PHPUnit_Framework_TestCase
             $serialized = $serializer->serialize($closure);
             $unserialized = $serializer->unserialize($serialized);
             $results['token'] = call_user_func_array($unserialized, $args);
-        } catch (\Exception $e) {
-            $results['token'] = 'ERROR';
-        } catch (\Throwable $e) {
+        } catch (\Exception|\Throwable $e) {
             $results['token'] = 'ERROR';
         }
 

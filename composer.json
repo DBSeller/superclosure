@@ -1,9 +1,17 @@
 {
-    "name": "jeremeamia/superclosure",
+    "name": "dbseller/superclosure",
     "type": "library",
     "description": "Serialize Closure objects, including their context and binding",
-    "keywords": ["closure", "serialize", "serializable", "function", "parser", "tokenizer", "lambda"],
-    "homepage": "https://github.com/jeremeamia/super_closure",
+    "keywords": [
+        "closure",
+        "serialize",
+        "serializable",
+        "function",
+        "parser",
+        "tokenizer",
+        "lambda"
+    ],
+    "homepage": "https://github.com/DBSeller/superclosure",
     "license": "MIT",
     "authors": [
         {
@@ -14,8 +22,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "nikic/php-parser": "^1.2|^2.0|^3.0|^4.0",
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3 || ^8.4 || ^8.5",
+        "nikic/php-parser": "^4.18 || ^5.0",
         "symfony/polyfill-php56": "^1.0"
     },
     "require-dev": {
@@ -35,5 +43,8 @@
         "branch-alias": {
             "dev-master": "2.4-dev"
         }
+    },
+    "replace": {
+        "jeremeamia/superclosure": "self.version"
     }
 }

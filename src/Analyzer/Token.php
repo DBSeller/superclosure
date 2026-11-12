@@ -42,7 +42,7 @@ class Token
     public function __construct($code, $value = null, $line = null)
     {
         if (is_array($code)) {
-            list($value, $code, $line) = array_pad($code, 3, null);
+            [$value, $code, $line] = array_pad($code, 3, null);
         }
 
         $this->code = $code;
